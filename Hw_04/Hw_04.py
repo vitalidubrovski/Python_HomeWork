@@ -87,5 +87,15 @@ def sum_of_polynomial(first: dict, second: dict) -> dict:
             valid[key] = second.get(key)
     return dict(sorted(valid.items())[::-1])
 
+
 result = sum_of_polynomial(first_polynom, second_polynom)
 print(get_polynomial(result))
+
+with open('Polynomial_1.txt', 'w', encoding='utf-8') as data1:
+    data1.write(get_polynomial(first_polynom))
+
+with open('Polynomial_2.txt', 'w', encoding='utf-8') as data2:
+    data2.write(get_polynomial(second_polynom))
+
+with open('Polynomial_summ.txt', 'w', encoding='utf-8') as result_data:
+    result_data.write(get_polynomial(result))
