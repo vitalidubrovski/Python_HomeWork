@@ -1,7 +1,6 @@
 import random
 
 from aiogram.types import Message
-from aiogram.dispatcher.filters import Text
 from config import dp
 import game
 
